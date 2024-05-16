@@ -1,4 +1,4 @@
- body {
+         body {
             background-image: url('name.jpg'); 
             background-size: cover;
             background-position: center;
@@ -8,7 +8,7 @@
             height: 100vh; 
             margin: 0;
         }
-   form {
+        form {
             background-color: #446C9E;
             padding: 20px;
             border-radius: 5px;
@@ -28,7 +28,8 @@
             border: 1px solid #ccc;
             border-radius: 3px;
         }
-  input[type="password"] {
+        
+      input[type="password"] {
     width: 200px; 
     padding: 5px;
     margin-bottom: 20px;
