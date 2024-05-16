@@ -28,3 +28,42 @@
             border: 1px solid #ccc;
             border-radius: 3px;
         }
+  input[type="password"] {
+    width: 200px; 
+    padding: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+        button {
+            padding: 8px 16px;
+            background-color: #EEF7FF; 
+            color: 4D869C;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005187; 
+        }
+     
+        #registerLink {
+            color: white ;
+            cursor: pointer ;
+        }
+        
+        #registerLink:hover {
+            text-decoration: underline;
+        }
+        
+        #loginLink {
+            color: white ;
+            cursor: pointer ;
+        }
+        
+        #loginLink:hover {
+            text-decoration: underline;
+           
+        }
+        
