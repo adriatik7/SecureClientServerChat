@@ -1,0 +1,70 @@
+         body {
+            background-image: url('name.jpg'); 
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            margin: 0;
+        }
+        form {
+            background-color: #446C9E;
+            padding: 20px;
+            border-radius: 5px;
+        
+            text-align: center;
+            margin-left: 650px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: white;
+        }
+        input[type="text"] {
+            width: 200px;
+            padding: 5px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        
+      input[type="password"] {
+    width: 200px; 
+    padding: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+        button {
+            padding: 8px 16px;
+            background-color: #EEF7FF; 
+            color: 4D869C;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005187; 
+        }
+     
+        #registerLink {
+            color: white ;
+            cursor: pointer ;
+        }
+        
+        #registerLink:hover {
+            text-decoration: underline;
+        }
+        
+        #loginLink {
+            color: white ;
+            cursor: pointer ;
+        }
+        
+        #loginLink:hover {
+            text-decoration: underline;
+           
+        }
+        

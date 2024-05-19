@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat</title>
+    <link rel="stylesheet" href="Style/login.css">
+</head>
+<body>
+    <div id="loginBox" style="display: block;">
+        <form id="loginForm" action="login.php" method="POST">
+            <input type="text" id="username" name="username" placeholder="Username">
+            <br>
+            <input type="password" id="password" name="password" placeholder="Password">
+            <br><br>
+            <button type="submit">Connect</button>
+            <p>If you are not registered, <span id="registerLink">Sign Up</span></p>
+        </form>
+         </div>
+
+    <div id="registerBox" style="display: none;">
+        <form id="registerForm" action="register.php" method="POST">
+            <input type="text" id="fullname" name="fullname" placeholder="Full Name">
+            <br>
+            <input type="text" id="regUsername" name="username" placeholder="Username">
+            <br>
+            <input type="password" id="regPassword" name="password" placeholder="Password">
+            <br>
+            <input type="password" id="confirmPassword" placeholder="Confirm Password">
+            <br><br>
+            <button type="submit">Register</button>
+            <br>
+            <p>If you are  registered, <span id="loginLink">Login</span></p>
+            <br>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("registerLink").addEventListener("click", function() {
+            document.getElementById("loginBox").style.display = "none";
+            document.getElementById("registerBox").style.display = "block";
+        });
+
+        document.getElementById("loginLink").addEventListener("click", function() {
+            document.getElementById("loginBox").style.display = "block";
+            document.getElementById("registerBox").style.display = "none";
+        });
+
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            var username = document.getElementById("username").value.trim();
+            var password = document.getElementById("password").value.trim();
+           
+            if (username === "" || password === "") {
+                alert("Please enter username and password.");
+                event.preventDefault();
+            }
+           
+        });
+
+        document.getElementById("registerForm").addEventListener("submit", function(event) {
+            var fullname = document.getElementById("fullname").value.trim();
+            var regUsername = document.getElementById("regUsername").value.trim();
+            var regPassword = document.getElementById("regPassword").value.trim();
+            var confirmPassword = document.getElementById("confirmPassword").value.trim();
+            
+            if (fullname === "" || regUsername === "" || regPassword === "" || confirmPassword === "") {
+                alert("Please fill in all fields.");
+                event.preventDefault();
+            } else if (regPassword !== confirmPassword) {
+                alert("Passwords do not match.");
+                event.preventDefault();
+             } else if (regPassword.length < 8 || !/\d/.test(regPassword) || !/[a-zA-Z]/.test(regPassword)) {
+                 alert("Password must be at least 8 characters long and include letters and numbers.");
+                  event.preventDefault();
+              }  else {
+                
+            }
+        });
+    </script>
+</body>
+</html>
+
+        
